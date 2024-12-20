@@ -1,0 +1,75 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Attendance {
+  userEmail String   @unique
+  timestamp DateTime @default(now())
+  User      User     @relation(fields: [userEmail], references: [email])
+}
+
+// model Location {
+//   id          String @id
+//   name        String
+//   totalPeople Int    @default(0)
+// }
+
+model Message {
+  id        String   @id
+  text      String
+  sender    String
+  recipient String
+  from      String
+  to        String
+  file      String?
+  createdAt DateTime @default(now())
+}
+
+model People {
+  id               String   @id
+  fullName         String
+  phoneNumber      String   @unique
+  password         String   @default("")
+  potentialType    String
+  grade            String
+  photo            String?
+  portfolio        String?
+  registeredBy     String
+  registeredByName String
+  locationId       String
+  createdAt        DateTime @default(now())
+}
+
+model User {
+  numericId    Int         @id @default(autoincrement())
+  id           String      @unique
+  idNumber     String      @unique
+  email        String      @unique
+  password     String
+  photo        String?
+  firstName    String
+  middleName   String
+  lastName     String
+  gender       String?
+  age          String?
+  isVerified   Boolean?    @default(false)
+  role         String
+  supervisorId String?     @default("")
+  createdAt    DateTime    @default(now())
+  file         String?
+  phoneNumber  String?
+  profession   String?
+  Attendance   Attendance?
+}
+
+model State {
+  id   Int    @id
+  country_id Int
+  name String
+  iso2 String
+}

@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "country_id": 70,
+    "name": "Southern Nations, Nationalities, and Peoples' Region",
+    "iso2": "SN"
+  },
+  {
+    "id": 2,
+    "country_id": 70,
+    "name": "Somali Region",
+    "iso2": "SO"
+  },
+  {
+    "id": 3,
+    "country_id": 70,
+    "name": "Amhara Region",
+    "iso2": "AM"
+  },
+  {
+    "id": 4,
+    "country_id": 70,
+    "name": "Tigray Region",
+    "iso2": "TI"
+  },
+  {
+    "id": 5,
+    "country_id": 70,
+    "name": "Oromia Region",
+    "iso2": "OR"
+  },
+  {
+    "id": 6,
+    "country_id": 70,
+    "name": "Afar Region",
+    "iso2": "AF"
+  },
+  {
+    "id": 7,
+    "country_id": 70,
+    "name": "Harari Region",
+    "iso2": "HA"
+  },
+  {
+    "id": 8,
+    "country_id": 70,
+    "name": "Dire Dawa",
+    "iso2": "DD"
+  },
+  {
+    "id": 9,
+    "country_id": 70,
+    "name": "Benishangul-Gumuz Region",
+    "iso2": "BE"
+  },
+  {
+    "id": 10,
+    "country_id": 70,
+    "name": "Gambela Region",
+    "iso2": "GA"
+  },
+  {
+    "id": 11,
+    "country_id": 70,
+    "name": "Addis Ababa",
+    "iso2": "AA"
+  }
+]
